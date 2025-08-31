@@ -12,4 +12,4 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = "https://expense-tracker-backend-one-plum.vercel.app"
+export const APIUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
