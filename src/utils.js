@@ -12,4 +12,6 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080/api'; //api newly added
+export const APIUrl = 'http://localhost:8080/api'; //api newly added
+
+//process.env.REACT_APP_API_URL ||
