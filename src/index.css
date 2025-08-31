@@ -1,0 +1,220 @@
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(135deg, #000428, #004e92); */
+  background-color: #2D2A32;
+  
+  
+
+
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: 0;
+  min-height: 100vh;
+  /* background: url("/public/bg.jpg") no-repeat center center fixed;
+  background-size: cover; */
+}
+
+.container{
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  background-color: purple;
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* EXPENSE TRACKER CSS */
+.user-section {
+  display: flex;
+  color:#ccc;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 10%;
+  width: 10%vw;
+  
+}
+
+.expense-list {
+  font-family: Arial, sans-serif;
+}
+
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.expense-description {
+  font-weight: bold;
+  color: #facc15;
+}
+
+.delete-button{
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.amounts-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+
+}
+
+.income-amount{
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.expense-amount{
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.CD {
+  color: #facc15; /* Tailwind yellow-400 */
+}
+
+.time {
+  color: #facc15; /* Tailwind yellow-400 */
+}
+
+
+/* FOR MAKING HOME BACKGROUND AND MAKE IT IN CENTER*/
+.home-bg {
+   min-height: 100vh;
+  width: 100vw;
+  background-color: #2D2A32;
+  display: flex;
+  justify-content: center; 
+  align-items: center;       
+  
+ }  
+
+ .home-bg {
+  background: 
+    url("/public/pen.png") no-repeat,
+    url("/public/coin.png") no-repeat;
+  background-size: 25cap, 22cap;
+  background-position: 99% 95%, 1% 99%;
+ }
+
+.login-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: 
+    url("/public/landing (1).png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+p, label, input {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
+.balance {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+
+}
+.income {
+  color: #4CC9F0;
+  text-shadow: 0 0 6px rgba(76, 201, 240, 0.2);
+}
+.expense {
+  color: #FF6B6B;
+  text-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+}
+
+
+
+@media (max-width: 1020px) {
+   .home-bg {
+  background: none;
+ }
+}
