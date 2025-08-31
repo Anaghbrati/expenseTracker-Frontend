@@ -19,7 +19,7 @@ function ExpensesTable( {expenses , handleDeleteExpense} ) {
                         <div className="time">
                             {new Date(expenses.createdAt).toLocaleDateString("en-IN", {
                                 day: "2-digit",
-                                month: "2-digit",
+                               month: "2-digit",
                                 year: "numeric",
                                 timeZone: "Asia/Kolkata"
                             })}
