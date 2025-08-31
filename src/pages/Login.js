@@ -47,12 +47,15 @@ function Login() {
             } else if (error) {
                 const details = error?.details[0].message;
                 handleError(details);
+                console.log(error);
             } else if (!success) {
                 handleError(message);
+                
             }
             console.log(result);
         } catch (err) {
             handleError(err);
+            console.log(err);
         }
     }
 
