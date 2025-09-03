@@ -273,6 +273,7 @@ function Home() {
           &nbsp; &nbsp;
           <button onClick={handleLogout}>Logout</button>
         </div>
+        <br></br>
         <div className="CD">
           <ExpenseDetails incomeAmt={incomeAmt} expenseAmt={expenseAmt} />
         </div>

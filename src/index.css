@@ -216,7 +216,7 @@ p, label, input {
 @media (max-width: 1020px) {
    .home-bg {
   background: none;
-  padding: 25px 15px 10px;
+  padding: calc(25px + env(safe-area-inset-top)) 15px 10px;
  }
   .user-section {
     flex-direction: row;
@@ -224,11 +224,12 @@ p, label, input {
   }
 
   .user-section h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .user-section button {
-    width: 50%;
+    width: 37%;
     text-align: center;
   }
 }
+
