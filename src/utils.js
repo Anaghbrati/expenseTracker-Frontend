@@ -12,6 +12,8 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = "https://expense-tracker-backend-one-plum.vercel.app/api"; //api newly added
+export const APIUrl = process.env.REACT_APP_API_URL
+
+//"https://expense-tracker-backend-one-plum.vercel.app/api"; //api newly added
 
 //process.env.REACT_APP_API_URL ||
