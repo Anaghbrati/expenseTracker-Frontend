@@ -228,7 +228,7 @@ p, label, input {
   .user-section {
     flex-direction: row;
     align-items: flex-start; 
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .user-section h1 {
