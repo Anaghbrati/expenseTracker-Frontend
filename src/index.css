@@ -216,5 +216,19 @@ p, label, input {
 @media (max-width: 1020px) {
    .home-bg {
   background: none;
+  padding: 15px 15px 10px;
  }
+  .user-section {
+    flex-direction: row;
+    align-items: flex-start; 
+  }
+
+  .user-section h1 {
+    font-size: 30px;
+  }
+
+  .user-section button {
+    width: 50%;
+    text-align: center;
+  }
 }
