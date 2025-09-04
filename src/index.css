@@ -104,6 +104,17 @@ button {
   color: #ccc;
 }
 
+.container {
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;      /* ✅ center horizontally */
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+
 
 
 .expense-list {
