@@ -15,7 +15,7 @@ function ExpensesTable( {expenses , handleDeleteExpense} ) {
                             }}
                             >{expenses.amount}
                         </div>
-
+                            
                         <div className="time">
                             {new Date(expenses.createdAt).toLocaleDateString("en-IN", {
                                 day: "2-digit",
