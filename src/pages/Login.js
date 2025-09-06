@@ -52,7 +52,7 @@ function Login() {
                 handleError(message);
                 
             }
-            console.log(result);
+            // console.log(result);
         } catch (err) {
             handleError(err);
             console.log(err);
