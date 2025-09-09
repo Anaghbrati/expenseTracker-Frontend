@@ -68,6 +68,7 @@ function Login() {
                         <div>
                             <label htmlFor='email'>Email</label>
                             <input
+                                id='email'
                                 onChange={handleChange}
                                 type='email'
                                 name='email'
@@ -78,6 +79,7 @@ function Login() {
                         <div>
                             <label htmlFor='password'>Password</label>
                             <input
+                                id='password'
                                 onChange={handleChange}
                                 type='password'
                                 name='password'
