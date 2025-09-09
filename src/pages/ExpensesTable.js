@@ -1,7 +1,7 @@
 import React from 'react'
 
 function ExpensesTable( {expenses , handleDeleteExpense} ) {
-    console.log('ExpensesTable-->', expenses)
+    // console.log('ExpensesTable-->', expenses) // it will print the expenses array in the console
     return (
         <div className="expense-List">
             {
