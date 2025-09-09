@@ -162,6 +162,12 @@ button {
   font-weight: bold;
 }
 
+.expense-category {
+  color: #008080;
+  margin-left: 10px;
+}
+
+
 .CD {
   color: #facc15;
 }

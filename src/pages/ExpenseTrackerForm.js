@@ -4,9 +4,25 @@ import { useState } from 'react';
 import { handleError } from '../utils';
 
 
+const categories = [
+        "Salary",        
+        "Bonus",        
+        "Freelance",
+        "Housing",
+        "Food & Groceries",
+        "Transportation",
+        "Education / Work",
+        "Health & Fitness",
+        "Entertainment",
+        "Shopping / Personal",
+        "Savings & Investments",
+        "Miscellaneous"
+    ];
+
+
 function ExpenseTrackerForm({ addExpenses }) {
 
-    const[expenseInfo, setExpenseInfo] = useState({text: '', amount: '' });
+    const[expenseInfo, setExpenseInfo] = useState({text: '', amount: '', category: 'Miscellaneous' });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,8 +35,8 @@ function ExpenseTrackerForm({ addExpenses }) {
     const handleExpense = (e) => {
         e.preventDefault();
         // console.log(expenseInfo); // it will print the expenseInfo object in the console
-        const {text,amount} = expenseInfo;
-        if(!text || !amount){
+        const {text,amount,category} = expenseInfo;
+        if(!text || !amount || !category){
             handleError("All fields are required");
             return;
         }
@@ -29,7 +45,7 @@ function ExpenseTrackerForm({ addExpenses }) {
         const data = { ...expenseInfo, amount: Number(amount) };
         
         addExpenses(data);
-        setExpenseInfo({ text: '', amount: '' });
+        setExpenseInfo({ text: '', amount: '', category: 'Miscellaneous' });
     }
 
     return (
@@ -57,6 +73,21 @@ function ExpenseTrackerForm({ addExpenses }) {
                                 placeholder='Enter your Amount, Expense(-ve) Income(+ve)...'
                                 value={expenseInfo.amount}
                             />
+                        </div>
+                        <div>
+                            <label htmlFor='category'>Category</label>
+                            <br></br>
+                            <select
+                                id='category'
+                                name='category'
+                                value={expenseInfo.category}
+                                onChange={handleChange}>
+                                {categories.map((cat, idx) => (
+                                <option key={idx} value={cat}>
+                                    {cat}
+                                </option>
+                                ))}
+                            </select>
                         </div>
                         <button type='submit'>Add Expense</button>
                         
