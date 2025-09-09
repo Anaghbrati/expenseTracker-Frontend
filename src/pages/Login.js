@@ -14,7 +14,7 @@ function Login() {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value);
+        // console.log(name, value);  //it will print the name and value of the input field in the console
         const copyLoginInfo = { ...loginInfo };
         copyLoginInfo[name] = value;
         setLoginInfo(copyLoginInfo);
