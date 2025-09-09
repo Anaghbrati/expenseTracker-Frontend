@@ -10,7 +10,7 @@ function ExpenseTrackerForm({ addExpenses }) {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value);
+        // console.log(name, value); //it will print the name and value of the input field in the console
         const copyExpenseInfo = { ...expenseInfo };
         copyExpenseInfo[name] = value;
         setExpenseInfo(copyExpenseInfo);
@@ -18,7 +18,7 @@ function ExpenseTrackerForm({ addExpenses }) {
 
     const handleExpense = (e) => {
         e.preventDefault();
-        console.log(expenseInfo);
+        // console.log(expenseInfo); // it will print the expenseInfo object in the console
         const {text,amount} = expenseInfo;
         if(!text || !amount){
             handleError("All fields are required");
