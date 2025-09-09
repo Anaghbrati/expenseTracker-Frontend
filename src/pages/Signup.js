@@ -69,6 +69,7 @@ function Signup() {
                                 autoFocus
                                 placeholder='Enter your name...'
                                 value={signupInfo.name}
+                                autoComplete='name'
                             />
                         </div>
                         <div>
@@ -80,6 +81,7 @@ function Signup() {
                                 name='email'
                                 placeholder='Enter your email...'
                                 value={signupInfo.email}
+                                autoComplete='email'
                             />
                         </div>
                         <div>
@@ -91,6 +93,7 @@ function Signup() {
                                 name='password'
                                 placeholder='Enter your password...'
                                 value={signupInfo.password}
+                                autoComplete='new-password'
                             />
                         </div>
                         <button type='submit'>Signup</button>

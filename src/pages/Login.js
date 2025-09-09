@@ -74,6 +74,7 @@ function Login() {
                                 name='email'
                                 placeholder='Enter your email...'
                                 value={loginInfo.email}
+                                autoComplete='email'
                             />
                         </div>
                         <div>
@@ -85,6 +86,7 @@ function Login() {
                                 name='password'
                                 placeholder='Enter your password...'
                                 value={loginInfo.password}
+                                autoComplete='current-password'
                             />
                         </div>
                         <button type='submit'>Login</button>
