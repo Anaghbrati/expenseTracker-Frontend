@@ -14,7 +14,7 @@ function Signup() {
     const navigate = useNavigate();
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value);
+        // console.log(name, value); //it will print the name and value of the input field in the console
         const copySignupInfo = { ...signupInfo };
         copySignupInfo[name] = value;
         setSignupInfo(copySignupInfo);
