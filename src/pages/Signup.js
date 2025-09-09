@@ -62,6 +62,7 @@ function Signup() {
                         <div>
                             <label htmlFor='name'>Name</label>
                             <input
+                                id='name'
                                 onChange={handleChange}
                                 type='text'
                                 name='name'
@@ -73,6 +74,7 @@ function Signup() {
                         <div>
                             <label htmlFor='email'>Email</label>
                             <input
+                                id='email'
                                 onChange={handleChange}
                                 type='email'
                                 name='email'
@@ -83,6 +85,7 @@ function Signup() {
                         <div>
                             <label htmlFor='password'>Password</label>
                             <input
+                                id='password'
                                 onChange={handleChange}
                                 type='password'
                                 name='password'
