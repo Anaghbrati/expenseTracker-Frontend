@@ -8,15 +8,25 @@ function ExpensesTable( {expenses , handleDeleteExpense} ) {
                 expenses?.map((expenses, index) => (
                     <div key={index} className='expense-item'>
                         <button className='delete-button' onClick={() => handleDeleteExpense(expenses._id)}>X</button>
+
+                        &nbsp;&nbsp;
+
                         <div className='expense-description'>{expenses.text}</div>
+
+                        &nbsp;&nbsp;
+
                         <div className='expense-amount'
                             style = {{
                                 color: expenses.amount > 0 ? '#27ae60' : '#e74c3c'
                             }}
                             >{expenses.amount}
                         </div>
+
+                        &nbsp;&nbsp;
                         
                         <div className='expense-category'>{expenses.category}</div>
+
+                        &nbsp;&nbsp;
 
                         <div className="time">
                             {new Date(expenses.createdAt).toLocaleDateString("en-IN", {
